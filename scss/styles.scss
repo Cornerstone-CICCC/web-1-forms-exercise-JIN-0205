@@ -1,3 +1,7 @@
+* {
+  margin-bottom: 1rem;
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
@@ -12,3 +16,12 @@ form {
   max-width: 600px;
   margin: 20px auto;
 }
+
+legend {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+// input {
+//   width: 100%;
+// }

@@ -9,6 +9,96 @@
 <body>
     <form enctype="multipart/form-data" action="index.html" method="get">
         <!-- FORM FIELDS HERE -->
+      <div class="container">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label>
+            <span>Name:</span><br />
+            <input type="text"><br />
+          </label>
+          <label>
+            <span>Email:</span><br />
+            <input type="email" required><br />
+          </label>
+          <label>
+            <span>Password:</span><br />
+            <input type="password" pattern="{12}" title="password needs to be at least 12 characters"><br />
+          </label>
+          <label>
+            <span>Date of Birth:</span><br />
+            <input type="date"><br />
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+          <label>
+            <span>Favorite Color:</span><br />
+            <input type="color"><br />
+          </label>
+          <label for="hobby">Hobby:</label><br />
+          <select name="hobby" id="hobby">
+            <option value="#" selected disabled>Which is your Hobby?</option>
+            <option value="Drawing">Drawing</option>
+            <option value="Swimming">Swimming</option>
+            <option value="Dancing">Dancing</option>
+          </select><br />
+          <label>
+            <span>Experience Level:</span><br />
+            <input type="range"><br />
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Contact Preferences</legend>
+          <label for="contact-method">Preference Contact Method:</label><br />
+          <select name="contact-method" id="contact-method">
+            <!-- <option value="#" selected disabled>Which is your Hobby?</option> -->
+            <option value="Email">Email</option>
+            <option value="Phone">Phone</option>
+            <option value="Mail">Mail</option>
+          </select><br />
+          <label>
+            <span>Subscribe to Newsletter:</span><br />
+            <input type="checkbox">
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+          <label>
+            <span>Gender</span><br />
+            <input type="radio" name="gender"  value="Male" id="">
+            <span>Male</span><br />
+          </label>
+          <label>
+            <input type="radio" name="gender"  value="Female" id="">
+            <span>Female</span><br />
+          </label>
+          <label>
+            <input type="radio" name="gender"  value="Other" id="">
+            <span>Other</span><br />
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>More Information</legend>
+          <span>Bio:</span><br />
+          <textarea name="Bio" id="Bio"></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>Upload Documents</legend>
+          <span>Resume and other certificates:</span><br />
+          <input type="file" name="" id="" multiple accept=".doc, .docx, .pdf, .jpg, .png">
+        </fieldset>
+
+        <fieldset>
+          <legend>Submission</legend>
+          <button type="reset">Reset</button>
+          <button type="submit">Submit</button>
+        </fieldset>
+      </div>
     </form>
 </body>
 </html>
